@@ -1,0 +1,114 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.gavin.yjq.counts"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 16
+        versionName "0.0.16"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    /*针对greenDao的一些配置*/
+    greendao {
+        schemaVersion 1 //数据库版本号
+        daoPackage 'com.gavin.yjq.counts.gen' //自动生成的工具类的包名
+        targetGenDir 'src/main/java' //路径
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+
+    testCompile 'junit:junit:4.12'
+
+    compile 'me.leefeng:lfrecyclerview:1.0.1'
+
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+
+    compile 'com.bigkoo:alertview:1.0.3'
+
+    //vlayout 页面布局
+    compile ('com.alibaba.android:vlayout:1.0.3@aar') {
+        transitive = true
+    }
+
+    //2.图片加载
+    //Glide 一个图片加载和缓存的库
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+
+    //3. 图片处理
+    //Glide-transformations 一个为Glide提供多种图片变换的库
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    //Android-gpuimage 基于OpenGL的Android过滤器
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+
+    //4. 网络请求
+    compile 'com.squareup.okhttp:okhttp:2.4.0'
+    //AndroidAsync 异步Socket，HTTP(客户端+服务器)，WebSocket，和socket.io库。基于NIO而不是线程。
+    compile 'com.koushikdutta.async:androidasync:2.1.9'
+    //Android Asynchronous Http Client Android异步HTTP库
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    //Volley Google推出的Android异步网络请求框架和图片加载框架
+//    compile 'com.android.volley:volley:1.0.0'
+//    compile 'com.mcxiaoke.volley:library:1.0.19'
+
+    //5. 网络解析
+    compile 'com.google.code.gson:gson:2.8.0'
+    //fastjson Java上一个快速的JSON解析器/生成器
+    compile 'com.alibaba:fastjson:1.1.56.android'
+
+    //6. 数据库
+    //greendao 一种轻快地将对象映射到SQLite数据库的ORM解决方案
+    compile 'org.greenrobot:greendao:3.2.0'
+
+    //7. 依赖注入
+    //ButterKnife 将Android视图和回调方法绑定到字段和方法上
+    compile 'com.jakewharton:butterknife:8.5.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    //Dagger2 一个Android和java快速依赖注射器
+    compile 'com.google.dagger:dagger:2.10'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
+    //AndroidAnotations 快速安卓开发。易于维护
+    annotationProcessor "org.androidannotations:androidannotations:4.3.0"
+    compile "org.androidannotations:androidannotations-api:4.3.0"
+
+    //8. 图表
+    //HelloCharts for Android 兼容到API8的Android图表库
+    compile 'com.github.lecho:hellocharts-library:1.5.8@aar'
+
+    //9. 后台处理
+    //Android Priority Job Queue 一个专门为Android轻松调度任务的工作队列
+    compile 'com.birbit:android-priority-jobqueue:2.0.1'
+
+    //10. 事件总线
+    //EventBus 安卓优化的事件总线，简化了活动、片段、线程、服务等的通信
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    compile 'com.android.support:design:25.3.1'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
+    annotationProcessor 'org.androidannotations:androidannotations:4.3.0'
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.5'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.5'
+//    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
+}

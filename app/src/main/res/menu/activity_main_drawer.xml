@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<group android:checkableBehavior="single">-->
+        <item
+                android:id="@+id/nav_sy"
+                android:icon="@mipmap/sy"
+                android:title="首页"/>
+        <item
+                android:id="@+id/nav_bbfx"
+                android:icon="@mipmap/plfx"
+                android:title="版本分析"/>
+        <item
+                android:id="@+id/nav_plxq"
+                android:icon="@mipmap/plxq"
+                android:title="评论详情"/>
+        <item
+                android:id="@+id/nav_yygl"
+                android:icon="@mipmap/yygl"
+                android:title="应用管理"/>
+    <!--</group>-->
+
+    <item android:title="个人信息">
+        <menu>
+            <item
+                    android:id="@+id/nav_glyxx"
+                    android:icon="@mipmap/glyxx"
+                    android:title="管理员选项"/>
+
+            <item
+                    android:id="@+id/nav_zhxx"
+                    android:icon="@mipmap/zhxx"
+                    android:title="账户信息"/>
+        </menu>
+    </item>
+
+</menu>

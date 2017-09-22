@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/all"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/basic_vertical_margin"
+            android:background="@drawable/touming"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <TextView
+                android:textSize="18sp"
+                android:id="@+id/title"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:id="@+id/rightText"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+        <ImageView
+                android:layout_centerVertical="true"
+                android:id="@+id/btnRight"
+                android:layout_gravity="right"
+                android:layout_marginRight="10dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.gavin.yjq.counts.include.LFRecyclerView
+            android:id="@+id/body"
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </com.gavin.yjq.counts.include.LFRecyclerView>
+
+</RelativeLayout>

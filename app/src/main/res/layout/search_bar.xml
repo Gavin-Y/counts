@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_alignParentTop="true"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/basic_vertical_margin"
+                android:background="@color/colorPrimary"
+                android:baselineAligned="false">
+    <ImageView
+            android:id="@+id/back"
+            android:src="@mipmap/back"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"/>
+
+
+    <EditText
+            android:layout_toRightOf="@+id/back"
+            android:layout_toLeftOf="@+id/go"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:id="@+id/search"
+            android:imeOptions="actionSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:maxLines="1"/>
+
+    <ImageView
+            android:src="@mipmap/search"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp8"
+            android:id="@+id/go"
+            android:layout_width="@dimen/dp32"
+            android:layout_height="@dimen/dp32"/>
+
+</RelativeLayout>

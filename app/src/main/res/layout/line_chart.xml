@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--图表2-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/View2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/dialog"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+    <lecho.lib.hellocharts.view.LineChartView
+            android:id="@+id/chart3"
+            android:layout_marginTop="@dimen/dp8"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginRight="@dimen/dp8"
+            android:layout_above="@+id/chartTv3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <TextView
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:id="@+id/chartTv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+</RelativeLayout>

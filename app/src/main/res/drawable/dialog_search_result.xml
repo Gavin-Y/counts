@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle">
+    <!-- 填充颜色 -->
+    <solid android:color="@color/touMing"/>
+    <!-- 矩形的圆角半径 -->
+    <corners android:radius="4dp"/>
+
+    <!--描边-->
+    <stroke
+            android:width="1px"
+            android:color="@color/black"/>
+
+    <padding
+            android:left="4dp"
+            android:right="4dp"
+            android:top="1dp"
+            android:bottom="1dp"/>
+</shape>

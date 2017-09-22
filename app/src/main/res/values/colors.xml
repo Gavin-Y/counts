@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#224376</color>
+    <color name="colorPrimary_a">#E0224376</color>
+    <color name="colorPrimaryDark">#224376</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="darkGrey">#3c3f41</color>
+    <color name="grey">#ccc</color>
+    <color name="lightGrey">#eaeaea</color>
+
+    <color name="search_bg">#f9f9fb</color>
+
+    <color name="black">#000</color>
+    <color name="white">#fff</color>
+
+    <color name="a_white">#8fff</color>
+
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="blue">#00f</color>
+
+    <color name="lightBlue">#0090f8</color>
+    
+    <color name="orange">#f64c00</color>
+
+    <color name="touMing">#00000000</color>
+
+    <color name="yellow">#ff0</color>
+    <color name="pink">#f0f</color>
+    <color name="turquoise">#0ff</color>
+
+    <color name="color1">#ff0028</color>
+    <color name="color2">#00b6ea</color>
+    <color name="color3">#ba4ece</color>
+    <color name="color4">#7dd700</color>
+    <color name="color5">#ffbd00</color>
+    <color name="color6">#0090ff</color>
+</resources>
